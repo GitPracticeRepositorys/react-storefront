@@ -21,13 +21,13 @@ steps:
     command: 'build'
     Dockerfile: './Dockerfile'
     repository: 'shivakrishna99/storefront'
-    tags: 'latest'
+    tags: "latest"
   displayName: 'Build Docker Image'
 
 - task: Docker@2
   inputs:
     command: 'push'
     repository: 'shivakrishna99/storefront'
-    tags: 'latest'
+    tags: "latest"
     containerRegistry: 'Docker-Hub-Connection'
   displayName: 'Push Docker Image'
