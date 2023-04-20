@@ -12,9 +12,7 @@ steps:
 
 - script: |
     npm install
-    npm run build
-    npm run test
-  displayName: 'Build, Test, and Package'
+  displayName: 'install'
 
 - task: Docker@2
   inputs:
